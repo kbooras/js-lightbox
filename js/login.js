@@ -7,11 +7,11 @@ $(document).ready(function() {
 		var password = $.cookie('password');
 		$('#username').val(username);
 		$('#password').val(password);
+		$('#remember').prop('checked', true);
 	}
 
 	$('#login_submit').click(function()
 	{
-		alert($('#username').val());
 	    if ($('#remember').is(':checked'))
 	    {
 	        var username = $('#username').val();
